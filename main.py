@@ -31,7 +31,7 @@ from time import sleep
 import random
 from pygame import mixer
 import threading
-
+from pkg.credentials import *
 from pkg.IBMWatsonIoT import *
 from pkg.IBMDatabase import *
 from pkg.picamMotionDetect import *
@@ -63,6 +63,21 @@ for effect in camera.IMAGE_EFFECTS:
 camera.stop_preview()
 
 '''
+'''
+# IBM Cloudant IAM credentials:
+deviceID = "pi4"
+username = "52ce675d-4e87-4b97-8553-c623c54be742-bluemix"
+apikey = "fZsK3HT2Xeb8BeKlvXfbSr_xwP98bGpkPBhKdT6ItmDp"
+
+# IBM WatsonIoT credentials:
+orgId = "pj8v34"
+typeId = "pi"
+deviceId = "01"
+token = "VffjhhkesMfh+VsmeD"
+'''
+# IBM credentials
+# Please see credentials.py
+
 # Global variable
 isMotion=[False,'imagePath']
 
@@ -83,19 +98,8 @@ minClassifyTime = 5
 petClass = ['Non-Pet','Cat','Dog']
 msg=['Yes',petClass[0]]
 
-# IBM Cloudant IAM credentials:
-deviceID = "pi4"
-username = "52ce675d-4e87-4b97-8553-c623c54be742-bluemix"
-apikey = "fZsK3HT2Xeb8BeKlvXfbSr_xwP98bGpkPBhKdT6ItmDp"
-
 # IBM Cloudant config:
-dbName= "temp3"
-
-# IBM WatsonIoT credentials:
-orgId = "pj8v34"
-typeId = "pi"
-deviceId = "01"
-token = "VffjhhkesMfh+VsmeD"
+dbName= "cgdb"
 
 #### Main code starts here ####
 
