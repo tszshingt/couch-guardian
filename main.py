@@ -43,16 +43,6 @@ def uploadWrapper (db):
     sendSignalToWatsonIoT(orgId,typeId,deviceId,token,msg[1])
 
 '''
-(Desirable) Log activities in dashboard. The device should log device activities in
-a database stored in the device. The logged data should include date and time of motion
-detection, entity type, whether the entity is a valid entity, date and time of deterrent
-activation, activated deterrent type(s), and errors. The database should be retrievable
-from a third-party system connected to the same local area network, and the content of
-the database should be summarized and visually displayed in a dashboard format.
-'''
-
-
-'''
 camera = PiCamera()
 camera.rotation = 180
 camera.start_preview()
@@ -63,18 +53,7 @@ for effect in camera.IMAGE_EFFECTS:
 camera.stop_preview()
 
 '''
-'''
-# IBM Cloudant IAM credentials:
-deviceID = "pi4"
-username = "52ce675d-4e87-4b97-8553-c623c54be742-bluemix"
-apikey = "fZsK3HT2Xeb8BeKlvXfbSr_xwP98bGpkPBhKdT6ItmDp"
 
-# IBM WatsonIoT credentials:
-orgId = "pj8v34"
-typeId = "pi"
-deviceId = "01"
-token = "VffjhhkesMfh+VsmeD"
-'''
 # IBM credentials
 # Please see credentials.py
 
