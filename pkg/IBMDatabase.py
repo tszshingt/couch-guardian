@@ -15,20 +15,33 @@ class IBMDatabase:
         
     #connect to database
     def connect(self):
-        self.client = Cloudant.iam(self.username, self.apikey)
-        self.client.connect()
+        try:
+            self.client = Cloudant.iam(self.username, self.apikey)
+            self.client.connect()
+        except:
+            print("IBM Database connection error.")
         
     def disconnect(self):
-        self.client.disconnect()
+        try:
+            self.client.disconnect()
+        except:
+            print("IBM Database disconnection error.")
         
     def createDatabase(self,dbName):
-        self.dbName=dbName
-        self.myDB=self.client.create_database(self.dbName)
-        if self.myDB.exists():    
-            print(f"{self.dbName} successfully created")
+        try:
+            self.dbName=dbName
+            self.myDB=self.client.create_database(self.dbName)
+            if self.myDB.exists():    
+                print(f"{self.dbName} successfully created")
+        except:
+            print("Database creation error.")
+            
     def selectDatabase(self,dbName):     
+        try:
             self.myDB=self.client[dbName]
             self.dbName=dbName
+        except:
+            print("Database selection error.")
             
     def addData(self,args):
         self.connect()
@@ -46,9 +59,12 @@ class IBMDatabase:
             "motion": motion,
             "pet": pet
         }
-        newDoc=self.myDB.create_document(jsonDoc)
-        if newDoc.exists():
-            print(f"Document {motion} and {pet} successfully created.")
+        try:
+            newDoc=self.myDB.create_document(jsonDoc)
+            if newDoc.exists():
+                print(f"Document {motion} and {pet} successfully created.")
+        except:
+            print("Document creation error.")
         self.disconnect()
         
 '''
