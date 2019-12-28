@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/bin/python
 
 # downloaded from https://raw.github.com/ghalfacree/bash-scripts/master/picam.py
 # modified to work with Python 3 on Rasberry Pi
