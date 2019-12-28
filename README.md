@@ -6,10 +6,10 @@
 - **Project 4-Final Project Report - thePerfect10.pdf**: Final team project report
 - **Project 4-Final Presentation - thePerfect10.pptx**: Final team project PowerPoint presentation
 - **Node-RED Dashboard Flows.json**: Node-RED flow implemented on IBM Cloud Node-RED application to interact with IBM Watson IoT and IBM Cloudant (Apache CouchDB) database for a web-based dashboard
-- **src**: Folder containing the Python project source codes used to interact with input/output and cloud applications. Required libraries are generally described in the comments (clone of the Github site [https://github.com/Dbaston530/couch-guardian](https://github.com/Dbaston530/couch-guardian) used for project development)
+- **src**: Folder containing the Python project source codes used to interact with input/output and cloud applications. Required libraries are generally described in the comments (clone of the Github site [https://github.com/Dbaston530/couch-guardian](https://github.com/Dbaston530/couch-guardian){:target="_blank"} used for project development)
 
 ### External Link
-- **[YouTube Link](https://youtu.be/2tebSB6xQng)**: Final team project presentation and demonstration video
+- **[YouTube Link](https://youtu.be/2tebSB6xQng){:target="_blank"}**: Final team project presentation and demonstration video
 
 ### My Contributions
 My main contributions to this team project are listed below. Please see final project report for details.
