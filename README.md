@@ -9,7 +9,7 @@
 - **src**: Folder containing the Python project source codes used to interact with input/output and cloud applications. Required libraries are generally described in the comments (clone of the Github site [https://github.com/Dbaston530/couch-guardian](https://github.com/Dbaston530/couch-guardian){:target="_blank"} used for project development)
 
 ### External Link
-- **[YouTube Link](https://youtu.be/2tebSB6xQng){:target="_blank"}**: Final team project presentation and demonstration video
+- **<a href="https://youtu.be/2tebSB6xQng" target="_blank">YouTube Link</a>**: Final team project presentation and demonstration video
 
 ### My Contributions
 My main contributions to this team project are listed below. Please see final project report for details.
